@@ -37,7 +37,7 @@ Este proyecto corresponde a una **prueba técnica** que consiste en desarrollar 
 
 La siguiente imagen muestra el porcentaje de cobertura de las pruebas unitarias en el proyecto:
 
-![Cobertura de Pruebas](./Coverage Backend.png)
+![Cobertura de Pruebas](Coverage Backend.png)
 
 ### Frontend
 
