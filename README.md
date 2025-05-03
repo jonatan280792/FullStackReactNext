@@ -37,7 +37,7 @@ Este proyecto corresponde a una **prueba técnica** que consiste en desarrollar 
 
 La siguiente imagen muestra el porcentaje de cobertura de las pruebas unitarias en el proyecto:
 
-![Cobertura de Pruebas](Coverage Backend.png)
+![Cobertura de Pruebas](./Coverage_Backend.png)
 
 ### Frontend
 
@@ -68,9 +68,11 @@ El proyecto fue desplegado usando **AWS** aprovechando el free-tier.
 
 ## 🔐 Seguridad
 
-- Autenticación básica con token JWT.
-- Buenas prácticas de OWASP: uso de HTTPS, headers de seguridad y validaciones.
-- Los datos de pago solo se procesan vía **sandbox** usando Wompi.
+- Autenticación con **token JWT**: se protege el acceso a los servicios de transacciones y productos, asegurando que **solo usuarios autenticados** puedan acceder a los endpoints protegidos.
+- Aplicación de **buenas prácticas OWASP**: uso de HTTPS, headers de seguridad y validaciones de entrada/salida.
+- **Procesamiento seguro** de datos sensibles: los datos de pago se manejan únicamente a través del **modo sandbox de Wompi** (sin exposición local).
+- Uso de `sessionStorage` para almacenar de forma temporal y segura el token JWT y los datos del usuario durante la sesión.
+- Implementación de **servicios reutilizables** (`utils`) para realizar peticiones REST de manera centralizada mediante una función llamada `buildRequest`, lo que garantiza consistencia, menor duplicación de código y facilita el mantenimiento.
 
 ---
 
@@ -86,6 +88,8 @@ Tabla: **Products**
 | currency    | String    | Moneda (ej: COP)               |
 | image_url   | String    | URL de la imagen               |
 | description | Text      | Descripción opcional           |
+
+![Cobertura de Pruebas](./Modelo.png)
 
 ---
 
