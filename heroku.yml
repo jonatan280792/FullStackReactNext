@@ -3,4 +3,4 @@ build:
     web: Dockerfile
 
 run:
-  web: npm run start:prod
+  web: npm --prefix backend run start:prod
