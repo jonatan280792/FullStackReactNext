@@ -1,0 +1,22 @@
+$primary-color: #6200ea;
+$secondary-color: #03dac5;
+
+body {
+  background-color: #9b9b9b;
+  color: $primary-color;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  background-color: $primary-color;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+
+  &:hover {
+    background-color: $secondary-color;
+  }
+}

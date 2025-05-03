@@ -1,0 +1,30 @@
+{
+  "files": [],
+  "compilerOptions": {
+    // "jsx": "react-jsx",
+    // "module": "esnext",  // O "es2020"
+    // "target": "esnext",  // También puede ser "es2020"
+    // "esModuleInterop": true,
+    // "baseUrl": "./src",
+    // "paths": {
+    //   "@/*": ["*"]
+    // },
+    // "types": ["jest", "node", "react", "react-dom", "react-redux", "react-router-dom"]
+    "module": "esnext",  // Cambia esto de 'commonjs' a 'esnext'
+    "target": "esnext",  // Puedes también asegurarte de que el 'target' esté en 'esnext'
+    "moduleResolution": "node",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "jsx": "react-jsx",
+    "baseUrl": "./",
+    "paths": {
+      "@/*": ["src/*"] // Asegúrate de tener esto si usas alias
+    }
+  },
+  "references": [
+    { "path": "./tsconfig.app.json" },
+    { "path": "./tsconfig.node.json" }
+  ],
+}
