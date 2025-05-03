@@ -35,6 +35,10 @@ Este proyecto corresponde a una **prueba técnica** que consiste en desarrollar 
 
 ## 🧪 Resultados de Cobertura
 
+La siguiente imagen muestra el porcentaje de cobertura de las pruebas unitarias en el proyecto:
+
+![Cobertura de Pruebas](./Coverage Backend.png)
+
 ### Frontend
 
 ```bash
@@ -57,8 +61,8 @@ npm run test:cov
 
 El proyecto fue desplegado usando **AWS** aprovechando el free-tier.
 
-- 🔗 **Frontend desplegado:** [https://miapp-front.vercel.app](https://miapp-front.vercel.app)  
-- 🔗 **API Backend desplegada:** [https://miapp-api.onrender.com](https://miapp-api.onrender.com)
+- 🔗 **Frontend desplegado:** [https://apptransactions.netlify.app/](https://apptransactions.netlify.app/)  
+- 🔗 **API Backend desplegada:** [https://fullstackreactnext.onrender.com/api](https://fullstackreactnext.onrender.com/api)
 
 ---
 
