@@ -1,3 +1,6 @@
+# Usuario login
+Usuario: jonatan@wompi.com
+Password:  123456
 
 # 💳 Aplicación de Pasarela de Pagos - Prueba Técnica
 
