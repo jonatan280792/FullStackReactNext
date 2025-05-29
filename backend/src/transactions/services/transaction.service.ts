@@ -17,6 +17,12 @@ export class TransactionService {
         return err('No se pudo obtener el token de aceptación del merchant');
       }
 
+      const dataIva = {
+        VAT: dto.amount_in_cents * 19 / 100
+      }
+
+      dto["tax-in-cents"] = dataIva;
+      dto.amount_in_cents = dto.amount_in_cents + (dto.amount_in_cents * 19 / 100);
       dto.acceptance_token = merchant.data.presigned_acceptance.acceptance_token;
 
       const signature = generateWompiSignature(

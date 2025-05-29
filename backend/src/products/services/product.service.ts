@@ -10,6 +10,9 @@ export class ProductService {
   async getAllProducts(): Promise<Result<ProductEntity[]>> {
     try {
       const products = await this.repo.findAll();
+      products.forEach(item => {
+        item.priceIva =  item.price * 19 /100
+      });
       return ok(products);
     } catch (e) {
       return err('Ah ocurrido un error al obtener los productos...', 404);

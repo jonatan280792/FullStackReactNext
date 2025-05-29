@@ -6,7 +6,8 @@ import { TransactionPayload } from '../interfaces/product';
 interface Product {
   id: string;
   name: string;
-  price: string;
+  price: number;
+  priceIva: number;
   description: string;
 }
 

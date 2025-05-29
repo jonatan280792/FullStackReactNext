@@ -126,6 +126,17 @@ const ProductsPage = () => {
                       color="primary"
                       mt={2}
                     >
+                      Total: ${parseFloat(product.price + product.priceIva).toLocaleString('es-CO')}
+                    </Typography>
+
+
+                    <Typography variant="body2" align="center" mt={2}>
+                      Iva.
+                      ${parseFloat(product.priceIva).toLocaleString('es-CO')}
+                    </Typography>
+
+                    <Typography variant="body2" align="center" mt={2}>
+                      Valor sin iva:
                       ${parseFloat(product.price).toLocaleString('es-CO')}
                     </Typography>
 

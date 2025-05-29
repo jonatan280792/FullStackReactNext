@@ -85,6 +85,15 @@ const ProductModal = ({ open, onClose, productId, onPay }: ProductModalProps) =>
                 <Typography variant="body2" align="center">
                   {product.description}
                 </Typography>
+
+                <Typography variant="h6" align="center" gutterBottom>
+                  Iva: ${product.priceIva}           
+                </Typography>
+
+                <Typography variant="h6" align="center" gutterBottom>
+                  Valor : ${product.price}           
+                </Typography>
+
                 <Typography
                   variant="h5"
                   align="center"
@@ -92,7 +101,7 @@ const ProductModal = ({ open, onClose, productId, onPay }: ProductModalProps) =>
                   fontWeight={600}
                   mt={2}
                 >
-                  ${parseFloat(product.price).toLocaleString('es-CO')}
+                  Total ${product.price + product.priceIva}
                 </Typography>
               </>
             ) : (

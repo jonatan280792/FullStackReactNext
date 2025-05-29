@@ -10,6 +10,7 @@ describe('ProductService', () => {
 
   const mockProduct: ProductEntity = {
     id: 'prod-123',
+    priceIva: 1234,
     name: 'Test Product',
   } as ProductEntity;
 

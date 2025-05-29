@@ -1,5 +1,6 @@
 export class CreateTransactionDto {
   amount_in_cents: number;
+  tax_in_cents?: number;
   currency: string; // COP
   customer_email: string;
   payment_method: {
@@ -8,6 +9,9 @@ export class CreateTransactionDto {
     payment_description?: string;
     user_type?: string;
   };
+  // "tax-in-cents": {
+  //   VAT: number
+  // }
   reference: string;
   acceptance_token?: string;
   signature?: string;
